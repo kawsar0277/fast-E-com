@@ -6,5 +6,6 @@ use App\Http\Controllers\HomeController;
 
 Route ::get('/', [HomeController::class, 'index']);
 
+Route ::get('/shop', [HomeController::class, 'shop']);
 
-Route ::get('/contact-us', [HomeController::class, 'contact']);
+Route ::get('/return-process', [HomeController::class, 'returnProcess']);

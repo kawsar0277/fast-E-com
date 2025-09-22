@@ -8,11 +8,17 @@ class HomeController extends Controller
 {
     public function index ()
     {
-        return view('welcome');
+        return view('frontend.index');
     }
 
-    public function contact ()
+    public function shop ()
     {
-        return view('contact');
+        return view('frontend.shop');
     }
+
+    public function returnProcess ()
+    {
+        return view('frontend.return-process');
+    }
+
 }
