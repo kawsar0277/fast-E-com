@@ -1,8 +1,8 @@
 	<footer class="footer-section">
 		<div class="footer__top-wrapper">
 			<div class="container">
-				<a href="index.html" class="footer__brand-logo-outer">
-					<img src="{{asset('frontend/assets/images/logo.png')}}" class="footer__brand-logo-inner" />
+				<a href="{{url('/')}}" class="footer__brand-logo-outer">
+					<img src="{{asset('frontend/assets/images/logo.png')}}" class="footer__brand-logo-inner"/>
 				</a>
 			</div>
 		</div>    
@@ -16,22 +16,22 @@
 							</h4>
 							<ul class="footer__list">
 								<li class="footer__list-item">
-									<a href="privacy-policy.html" class="footer__list-item-link">
+									<a href="{{url('/privacy-policy')}}" class="footer__list-item-link">
 										Privacy Policy
 									</a>
 								</li>
 								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
+									<a href="{{url('/Terms$Conditions')}}" class="footer__list-item-link">
 										Terms & Conditions
 									</a>
 								</li>
 								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
+									<a href="{{url('/refund-policy')}}" class="footer__list-item-link">
 										Refund Policy
 									</a>
 								</li>
 								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
+									<a href="{{url('/paymentpolicy')}}" class="footer__list-item-link">
 										Payment Policy
 									</a>
 								</li>
@@ -78,12 +78,12 @@
 							</h4>
 							<ul class="footer__list">
 								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
+									<a href="{{url('/about-us')}}" class="footer__list-item-link">
 										About Us
 									</a>
 								</li>
 								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
+									<a href="{{url('/contact-us')}}" class="footer__list-item-link">
 										Contact Us
 									</a>
 								</li>
