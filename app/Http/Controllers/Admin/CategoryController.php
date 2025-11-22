@@ -35,4 +35,30 @@ class CategoryController extends Controller
 
         return redirect()->back();
     }
+
+    public function listCategory ()
+    {
+        $categoris = Category::get();
+        
+        return view('admin.category.list', compact('categoris'));
+    }
+
+    public function deleteCategory ($id)
+    {
+        $category = Category::find($id);
+
+        if($category->image && file_exists('admin/category/'.$category->image)){
+
+            unlink('admin/category/'.$category->image);
+        }
+
+        $category->delete();
+
+         toastr()->success('Category deleted Successfully!!');
+
+        return redirect()->back();
+    }
+
+
+
 }
