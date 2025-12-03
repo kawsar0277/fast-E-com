@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
@@ -47,3 +48,11 @@ Route ::get('/admin/list/category', [CategoryController::class,'listCategory']);
 
 Route ::get('/admin/delete/category/{id}', [CategoryController::class,'deleteCategory']);
 
+Route ::get('/admin/edit/category/{id}', [CategoryController::class,'editCategory']);
+
+Route ::post('/admin/update/category/{id}', [CategoryController::class,'updateCategory']);
+
+
+//SubCategory routes....
+
+Route ::get('/admin/create/sub-category', [SubCategoryController::class,'createSubCategory']);

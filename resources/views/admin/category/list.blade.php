@@ -53,7 +53,7 @@
                                           <img src="{{asset('admin/category/'.$category->image)}}" height="150" width="120">
                                         </td>
                                         <td>
-                                          <a href=""><span class="badge text-bg-success">Edit</span></a>
+                                          <a href="{{url('/admin/edit/category/'.$category->id)}}"><span class="badge text-bg-success">Edit</span></a>
                                           <a href="{{url('/admin/delete/category/'.$category->id)}}" onclick="return confirm('Are you sure?')"><span class="badge text-bg-danger">Delete</span></a>
                                         </td>
                                     </tr>
